@@ -1,0 +1,9 @@
+<h2>Calculadora de Volumen de Cilindro</h2>
+<form action="{% url 't02:calcular_volumen' %}" method="post">
+    {% csrf_token %}
+    Altura (metros): 
+    <input type="number" name="altura" step="0.01" required><br>
+    Diámetro (metros): 
+    <input type="number" name="diametro" step="0.01" required><br>
+    <input type="submit" value="Calcular">
+</form>
